@@ -13,6 +13,7 @@ package Stack;
  *
  * Additionally, there is often an operation called Peek or Top, which allows you to view the element at the top
  * of the stack without removing it.
+ *
  * */
 
 class Stack {
