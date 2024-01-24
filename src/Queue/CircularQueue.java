@@ -1,7 +1,5 @@
 package Queue;
 
-
-
 public class CircularQueue {
     int maxSize;
     int[] queue;
