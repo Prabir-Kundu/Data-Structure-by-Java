@@ -86,7 +86,6 @@ public class StackWithUserInput {
 
     public static void main(String[] args) throws IOException {
         StackWithUserInput stack = new StackWithUserInput();
-
         stackOperation(stack);
     }
 }

@@ -1,10 +1,9 @@
 package Stack;
-
 /**
  * TODO: What is Stack?
  * Answer: A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. it has only one
  * pointer called the top that points to the topmost element of the stack. Whenever an element is added into a stack
- * it is always added at the top of the stack and when an element is deleted from the stack it always deletes from
+ * it is always added at the top of the stack and when an element is deleted from the stack it also deletes from
  * the top of the stack.
  *
  * A stack typically supports two main operations:-
@@ -13,7 +12,9 @@ package Stack;
  *
  * Additionally, there is often an operation called Peek or Top, which allows you to view the element at the top
  * of the stack without removing it.
- *
+ * example of the stack: plates stacked over one another in the canteen. The plate which is at the top is the first one to be removed,
+ * i.e. the plate which has been placed at the bottommost position remains in the stack for the longest period of time.So, it can be
+ * simply seen to follow LIFO(Last In First Out)/FILO(First In Last Out) order.
  * */
 
 class Stack {
