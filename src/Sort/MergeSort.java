@@ -95,5 +95,6 @@ class MergeSort {
         System.out.println("\nSorted array is");
         printArray(arr);
     }
+
 }
 
