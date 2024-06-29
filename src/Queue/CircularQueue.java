@@ -6,7 +6,7 @@ public class CircularQueue {
     int front;
     int rear;
 
-    CircularQueue(int size){
+    CircularQueue(int size) {
         maxSize = size+1;
         queue = new int[maxSize];
         front = 0;
@@ -17,7 +17,7 @@ public class CircularQueue {
         return front == rear;
     }
 
-    private boolean isFull(){
+    private boolean isFull() {
         return (rear + 1) % maxSize == front;
     }
 
@@ -74,6 +74,5 @@ public class CircularQueue {
         cq.enqueue(80);
 
         cq.display();
-
     }
 }

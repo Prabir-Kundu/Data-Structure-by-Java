@@ -39,7 +39,7 @@ class Stack {
     // Use to delete element from the stack
     public int pop() {
         if (isEmpty()) {
-            System.out.println("Stack.Stack Underflow. Cannot pop from an empty stack.");
+            System.out.println("Stack Underflow. Cannot pop from an empty stack.");
             return -1; // Or throw an exception
         }
         int poppedItem = array[top--];
@@ -50,7 +50,7 @@ class Stack {
     // use to print topmost element of the stack
     public int peek() {
         if (isEmpty()) {
-            System.out.println("Stack.Stack is empty. Cannot peek.");
+            System.out.println("Stack is empty. Cannot peek.");
             return -1; // Or throw an exception
         }
         return array[top];
@@ -60,16 +60,34 @@ class Stack {
         return top == -1;
     }
 
+    private void printList(){
+        for(int i = top; i > -1; i--){
+            if (i == top){
+                System.out.println();
+                System.out.println("  "+array[i]+" <- Top of the stack");
+            } else {
+                System.out.println("  "+array[i]);
+            }
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         Stack stack = new Stack();
 
         stack.push(10);
         stack.push(20);
         stack.push(30);
+        stack.push(40);
+
+        System.out.println("The Full stack item is: ");
+        stack.printList();
 
         System.out.println("Top element is: " + stack.peek());
 
         stack.pop();
+        System.out.println("The Full stack item is: ");
+        stack.printList();
         stack.pop();
 
         System.out.println("Is the stack empty? " + stack.isEmpty());

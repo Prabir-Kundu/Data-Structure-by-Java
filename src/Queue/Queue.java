@@ -1,5 +1,13 @@
 package Queue;
-
+/**
+ * TODO: What is Queue?
+ * Answer: The Queue is a linear data structure and abstract data type that's follow First In, First Out (FIFO) principle,
+ * meaning that the element which has entered first in a queue will be removed first from the queue.
+ *
+ * Queue have main two different operation
+ * 1) Enqueue: Adds an element to the rear of the queue.
+ * 2) Dequeue: Removes and returns the element at the front of the queue.
+ * */
 public class Queue {
     int MAX_ITEM = 5;
     int[] array;
