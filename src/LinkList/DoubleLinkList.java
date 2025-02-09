@@ -25,7 +25,7 @@ public class DoubleLinkList {
             newNode.next = head;
             head.prev = newNode;
             head = newNode;
-        }
+         }
         System.out.println("Element added successfully.");
     }
 

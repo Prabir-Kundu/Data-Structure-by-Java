@@ -64,7 +64,7 @@ public class SingleLinkList {
         Node current = head;
         Node prvNode = null;
 
-        if (head == null){
+        if (head == null) {
             System.out.println("No node is present");
         } else {
             // Check if the node to be deleted is the head
@@ -114,7 +114,7 @@ public class SingleLinkList {
         }
     }*/
 
-    void printList(){
+    void printList() {
         Node current = head;
         while (current != null){
             System.out.print(current.data+" <-> ");
@@ -170,6 +170,7 @@ public class SingleLinkList {
                     break;
                 default:
                     System.out.println("Invalid choice. Please enter a valid option.");
+                    break;
             }
         }
     }

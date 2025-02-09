@@ -54,6 +54,8 @@ public class CircularQueue {
             System.out.println();
         }
     }
+
+
     public static void main(String[] args) {
         CircularQueue cq = new CircularQueue(5);
         cq.enqueue(10);
