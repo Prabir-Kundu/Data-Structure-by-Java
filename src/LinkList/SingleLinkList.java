@@ -82,6 +82,7 @@ public class SingleLinkList {
 
             // If the key is not present in the linked list
             if (current == null){
+                System.out.println("Value is not present.");
                 return;
             }
 
